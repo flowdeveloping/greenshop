@@ -1,0 +1,35 @@
+
+<div class="container-carrito">
+
+    <!--  BANNER   -->
+<section class="bannerCarrito">
+  <div class="banner-content-carrito">
+    
+  </div>
+</section>
+
+<div class="container-titulos-quantity-botones">
+<h1>Carrito</h1>
+<h2>Cart ID: {{idCart}}</h2>
+<h3>Productos:</h3>
+<ul>
+  {{#each cart}}
+    <li>
+      <h4>Titulo: {{title}}</h4>
+      <h4>Cantidad: {{quantity}}</h4>
+    </li>
+  {{/each}}
+</ul>
+
+
+<div class="info-childsbutton">
+    <a href="/products">
+      <input type="button" value="Ir a Productos" />
+    </a>
+  </div>
+  <div class="info-childsbutton">
+    <a class='cartId' id='{{idCart}}' href='http://localhost:8080/auth/perfil'>
+      <input type="button" value="Ver Perfil" />
+    </a>
+  </div>
+  </div>
